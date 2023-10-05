@@ -1,0 +1,623 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,900;1,300;1,400&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/aos.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+
+    <link rel="stylesheet" href="examples.css">
+    <title>Dialect</title>
+</head>
+
+<body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="hold-popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="exampleModalLongTitle">Hold</h1>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-md-12 common-popup">
+                        <label>Company Name <span class="mandatory">*</span></label>
+                        <input type="text" placeholder="Al Abab Trading & Contracting WLL" class="form-control">
+
+                        <label>Company Name <span class="mandatory">*</span></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer model-footer-padd">
+                    <div class="d-flex justify-content-end">
+                        <div class="form-group proceed-btn">
+                            <button type="button" class="btn btn-third" data-dismiss="modal">Cancel</button>
+                        </div>
+
+                        <div class="form-group proceed-btn">
+                            <input type="button" value="Submit" class="btn btn-secondary">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="share-popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="exampleModalLongTitle">Share</h1>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-md-12 common-popup">
+                        <label>Selected Enquiry for sharing</label>
+                        <div class="sharing-content">
+                            <span class="share-cntent-id">23845939292225</span>
+                            <p>Windows Aircondition on rental basis...</p>
+                            <span class="date">25 October, 2022</span>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-7">
+                                <label>Select User <span class="mandatory">*</span></label>
+                                <input type="text" placeholder="PO Box No" class="form-control">
+                            </div>
+                            <div class="col-md-5">
+                                <label>Set Priority <span class="mandatory">*</span></label>
+                                <input type="text" placeholder="Select" class="form-control">
+                            </div>
+                        </div>
+                        <div class="bottom-msg">
+                            <span class="text-danger">Unfortunately, the email address 'sajielco@gmail.com' is not
+                                associated with an active
+                                user.</span> <span>Please add them as a new team user in</span> <a href="#">Team
+                                settings.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer model-footer-padd">
+                    <div class="d-flex justify-content-end">
+                        <div class="form-group proceed-btn">
+                            <button type="button" class="btn btn-third" data-dismiss="modal">Cancel</button>
+                        </div>
+
+                        <div class="form-group proceed-btn">
+                            <input type="button" value="Share" class="btn btn-secondary">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <header class="navbar">
+        <div class="header header-inner container-fluid navbar-default d-flex">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="XCHANGE"></a>
+            </div>
+            <div class="header-right-inner d-flex align-items-center">
+                <span  class="notification">
+                    <small class="notification-count d-flex align-items-center justify-content-center"></small>
+                </span>
+                <div id="mark-drop4">
+                    <a href="#" class="" style="float: right;">John Doe</a>
+                    <ul class="drop-profile2">
+                        <li onclick="window.location.href = 'profile.html'">Profile Settings</li>
+                        <li onclick="window.location.href = 'subscription-billing.html'">Subscriptions</li>
+                        <li onclick="window.location.href = 'index.html'">Logout</li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+            <span class="tooltip-nav-main nav-tooltip-1"><span class="tooltip-arrow2"></span>Dashboard</span>
+            <span class="tooltip-nav-main nav-tooltip-2"><span class="tooltip-arrow2"></span>Upcoming Events</span>
+
+
+            <div class="side-nav-main position-fixed">
+                <div class="d-flex align-items-center justify-content-end">
+                    <div class="logo-nav hide-logo" id="logo-toogle">
+                        <a href="index.html"><img src="images/logo.png" alt="XCHANGE"></a>
+                    </div>
+                    <a href="#" class="nav-expand-ico"></a>
+                </div>
+                 <ul>
+                    <li class="d-flex align-items-center active my-quotes"><a href="dashboard.html"> <i><img
+                                    src="images/dashboard-apps-ico.svg"></i></a><a href="dashboard.html" class="nav-txt">Dashboard</a>
+                            
+                    </li>
+                    <li class="d-flex align-items-center review-list"><a href="#"> <i><img
+                        src="images/upcoming-events-ico.svg"></i></a><a href="#"
+                class="nav-txt">
+                Upcoming Events</a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="container-fluid pleft-77">
+        <div class="px-4 py-3">
+            <div class="sub-plans-head mt-2 mb-3 d-flex align-items-center justify-content-between">
+                <div>
+                    <h1><a href="subscription-billing.html" class="back-btn"></a>Dialect b2b.com Pricing & Plans</h1>
+                <label>Your current subscription is Standard, upgrade to Business for additional benefits.</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Manage Category Subscription" class="btn btn-third" onclick="window.location.href = ''">
+                </div>
+            </div>
+            <div class="sub-plans-main">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="sub-plan-2">
+                            <div class="sub-plan-list-head3">
+                               <div class="plan-off d-flex">
+                                    <span>
+                                        <span>Billed</span>
+                                        Monthly
+                                    </span>
+                                        <input type="checkbox" name="" id="aa3" class="add-page-check" checked>
+                                        <label for="aa3" class="d-flex mt-4"></label>
+                                    <div class="month-year-switch">
+                                        <span class="pad-top-22">
+                                            Yearly
+                                            <label>30% OFF</label>
+                                        </span>
+                                    </div>
+                               </div>
+                               <i class="pt-3 d-block">Save 30% when you pay yearly</i>
+                            </div>
+    
+                            <div class="basic-plan-list">
+                                <h2>Sales Account</h2>
+                                <ul class="mt-0">
+                                    <li class="d-flex align-items-center">Receiving Business Enquiry</li>
+                                    <li class="d-flex align-items-center">Responding to Business Enquiry
+                                    </li>
+                                    <li class="d-flex align-items-center">Limited Vendor participation</li>
+                                    <li class="d-flex align-items-center">FAQ Participation</li>
+                                    <li class="d-flex align-items-center">View Account History</li>
+                                </ul>
+    
+                                <h2>Procurement Account</h2>
+
+                                <ul class="mt-0">
+                                    <li class="d-flex align-items-center">Sourcing Requests</li>
+                                    <li class="d-flex align-items-center">Bid Collection
+                                    </li>
+                                    <li class="d-flex align-items-center">Limited Vendor Request</li>
+                                    <li class="d-flex align-items-center">Bid Review</li>
+                                    <li class="d-flex align-items-center">Viewing Account History</li>
+                                </ul>
+    
+                                <h2>Team Account</h2>
+                                <ul class="mt-0">
+                                    <li class="d-flex align-items-center">Sourcing Requests</li>
+                                    <li class="d-flex align-items-center">Bid Collection</li>
+                                    <li class="d-flex align-items-center">Limited Vendor Request</li>
+                                    <li class="d-flex align-items-center">Bid Review</li>
+                                    <li class="d-flex align-items-center">View Account History</li>
+                                </ul>
+    
+                            </div>
+    
+                        </div>
+                    </div>
+                
+                <div class="col-md-4">
+                    <div class="sub-plan-1">
+                        <div class="sub-plan-list-head2">
+                            <div class="busins-head d-flex justify-content-between">
+                            <h1 class="plan2">Basic</h1>
+                            </div>
+
+                            <div class="busins-head-count d-flex">
+                                <span class="grey-txt">Now Free</span>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Current Subscription" class="btn btn-fourth-color" onclick="window.location.href = '';">
+                            </div>
+
+                        </div>
+
+                        <div class="sub-plan-list-content">
+                            <ul>
+                                <li class="d-flex align-items-center"><i class="grey-tick"></i>No Limitation</li>
+                                <li class="d-flex align-items-center"><i class="grey-tick"></i>Daily One credit and will expire same day 
+                                </li>
+                                <li class="d-flex align-items-center"><i class="grey-tick"></i>4 requests in a month </li>
+                                <li class="d-flex align-items-center"><i class="grey-tick"></i>No FAQ</li>
+                                <li class="d-flex align-items-center"><i class="grey-tick"></i>Last two months</li>
+                            </ul>
+
+                            <ul>
+                                <li class="d-flex align-items-center"><i class="grey-tick"></i>No Limitation</li>
+                                <li class="d-flex align-items-center"><i class="grey-tick"></i>No Limitation</li>
+                                <li class="d-flex align-items-center"><i class="grey-tick"></i>Only 5 Nos. per month</li>
+                                <li class="d-flex align-items-center"><i class="grey-tick"></i>Only 15 Review per month</li>
+                                <li class="d-flex align-items-center"><i class="grey-tick"></i>Last two months</li>
+                            </ul>
+
+
+                            <ul>
+                                <li class="d-flex align-items-center"><i class="grey-tick"></i>No Limitation</li>
+                                <li class="d-flex align-items-center"><i class="grey-tick"></i>No Limitation</li>
+                                <li class="d-flex align-items-center"><i class="grey-tick"></i>Only 5 Nos. per month</li>
+                                <li class="d-flex align-items-center"><i class="grey-tick"></i>Only 15 Review per month</li>
+                                <li class="d-flex align-items-center"><i class="grey-tick"></i>Last two months</li>
+                            </ul>
+
+                            <div class="form-group px-4 pt-4">
+                                <input type="submit" value="Current Subscription" class="btn btn-fourth-color border-0" onclick="window.location.href = '';">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="sub-plan-1">
+                        <div class="sub-plan-list-head">
+                            <div class="busins-head d-flex justify-content-between">
+                            <h1>Standard</h1>
+                            <div class="popular">Popular</div>
+                            </div>
+
+                            <div class="busins-head-count d-flex">
+                                <span><span>$</span>40</span>
+                                <h2>per month</h2>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Upgrade" class="btn btn-third-color" onclick="window.location.href = '';">
+                            </div>
+
+                        </div>
+
+                        <div class="sub-plan-list-content">
+                            <ul>
+                                <li class="d-flex align-items-center"><i class="grey-tick"></i>No Limitation</li>
+                                <li class="d-flex align-items-center"><i class="green-tick"></i>No Limitation</li>
+                                <li class="d-flex align-items-center"><i class="green-tick"></i>No Limitation</li>
+                                <li class="d-flex align-items-center"><i class="green-tick"></i>FAQ Open</li>
+                                <li class="d-flex align-items-center"><i class="green-tick"></i>Open</li>
+                            </ul>
+
+                            <ul>
+                                <li class="d-flex align-items-center"><i class="grey-tick"></i>No Limitation</li>
+                                <li class="d-flex align-items-center"><i class="grey-tick"></i>No Limitation</li>
+                                <li class="d-flex align-items-center"><i class="green-tick"></i>No Limitation</li>
+                                <li class="d-flex align-items-center"><i class="green-tick"></i>FAQ Open</li>
+                                <li class="d-flex align-items-center"><i class="green-tick"></i>Open</li>
+                            </ul>
+
+
+                            <ul>
+                                <li class="d-flex align-items-center"><i class="grey-tick"></i>No Limitation</li>
+                                <li class="d-flex align-items-center"><i class="grey-tick"></i>No Limitation</li>
+                                <li class="d-flex align-items-center"><i class="green-tick"></i>No Limitation</li>
+                                <li class="d-flex align-items-center"><i class="green-tick"></i>FAQ Open</li>
+                                <li class="d-flex align-items-center"><i class="green-tick"></i>Open</li>
+                            </ul>
+
+                            <div class="form-group px-4 pt-4">
+                                <input type="submit" value="Upgrade" class="btn btn-third-color border-0" onclick="window.location.href = '';">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script type='text/javascript' src='js/jquery.min.js'></script>
+    <script type='text/javascript' src='js/aos.js'></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+
+        $(document).ready(function () {
+            $('.nav-expand-ico').click(function () {
+                var toggleWidth = $(".side-nav-main").width() == 285 ? "64px" : "285px";
+                $('.side-nav-main').animate({ width: toggleWidth });
+            });
+
+          
+            
+            $(".nav-expand-ico").click(function () {
+                $("#logo-toogle").toggleClass("hide-logo");
+            });
+            
+            $(".nav-expand-ico").click(function () {
+                $(this).toggleClass("nav-close-ico");
+            });
+
+            $('.bid-open').hide();
+
+            $('.bid-detail').click(function () {
+                $('.bid-tap, .questions-ask').hide('500');
+                $('.bid-open').show('500');
+
+                $('.scnd-section-main').removeClass('col-md-9');
+                $('.scnd-section-main').addClass('col-md-6');
+            });
+
+            $('.cross-second').click(function () {
+                $('.bid-tap, .questions-ask').show('300');
+                $('.bid-open').hide('300');
+            });
+            $('.question-asked').hide();
+            $('.cross').click(function () {
+                $('.questions-ask').hide('300');
+                $('.scnd-section-main').addClass('col-md-9');
+                $('.scnd-section-main').removeClass('col-md-6');
+                $('.question-asked').show();
+            });
+            $('.question-asked').click(function () {
+                $('.questions-ask').show('300');
+                $('.scnd-section-main').removeClass('col-md-9');
+                $('.scnd-section-main').addClass('col-md-6');
+                $('.question-asked').hide();
+            });
+
+            $(".all-bid-ul").on('click', 'li', function () {
+                $(".all-bid-ul li.active").removeClass("active");
+                $(this).addClass("active");
+            });
+
+            $('.my-quotes').mouseover(function (e) {
+                $('.nav-tooltip-1').css('visibility', 'visible');
+            });
+            $('.my-quotes').mouseout(function (e) {
+                $('.nav-tooltip-1').css('visibility', 'hidden');
+            })
+            
+            $('.review-list').mouseover(function (e) {
+                $('.nav-tooltip-2').css('visibility', 'visible');
+            });
+            $('.review-list').mouseout(function (e) {
+                $('.nav-tooltip-2').css('visibility', 'hidden');
+            })
+
+            $('.draft').mouseover(function (e) {
+                $('.nav-tooltip-3').css('visibility', 'visible');
+            });
+            $('.draft').mouseout(function (e) {
+                $('.nav-tooltip-3').css('visibility', 'hidden');
+            })
+
+            $('.completed-bidding').mouseover(function (e) {
+                $('.nav-tooltip-4').css('visibility', 'visible');
+            });
+            $('.completed-bidding').mouseout(function (e) {
+                $('.nav-tooltip-4').css('visibility', 'hidden');
+            })
+
+            $('.team-settings').mouseover(function (e) {
+                $('.nav-tooltip-5').css('visibility', 'visible');
+            });
+            $('.team-settings').mouseout(function (e) {
+                $('.nav-tooltip-5').css('visibility', 'hidden');
+            })
+
+            $('.upcoming-events').mouseover(function (e) {
+                $('.nav-tooltip-6').css('visibility', 'visible');
+            });
+            $('.upcoming-events').mouseout(function (e) {
+                $('.nav-tooltip-6').css('visibility', 'hidden');
+            })
+            $(".nav-expand-ico").click(function () {
+                $(".tooltip-nav-main").toggleClass("tool-tip-hide");
+            });
+
+
+            $('.read-more').click(function () {
+                $('#msg-expand').removeClass('msg-expand-main');
+                $('#msg-expand').addClass('msg-less-main');
+                $('.read-more').hide();
+                $('.read-less').show();
+                $("ul.all-bid-ul").css("height", "calc(100vh - 646px)");
+                
+            });
+
+            $('.read-less').click(function () {
+                $('#msg-expand').addClass('msg-expand-main');
+                $('#msg-expand').removeClass('msg-less-main');
+                $('.read-more').show();
+                $('.read-less').hide();
+                $("ul.all-bid-ul").css("height", "calc(100vh - 369px)");
+            });
+            
+        });
+
+
+
+
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        function openCity2(evt, cityName) {
+            var i, tabcontent2, tablinks2;
+            tabcontent2 = document.getElementsByClassName("tabcontent2");
+            for (i = 0; i < tabcontent2.length; i++) {
+                tabcontent2[i].style.display = "none";
+            }
+            tablinks2 = document.getElementsByClassName("tablinks2");
+            for (i = 0; i < tablinks2.length; i++) {
+                tablinks2[i].className = tablinks2[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        function openCity3(evt, cityName) {
+            var i, tabcontent3, tablinks3;
+            tabcontent3 = document.getElementsByClassName("tabcontent3");
+            for (i = 0; i < tabcontent3.length; i++) {
+                tabcontent3[i].style.display = "none";
+            }
+            tablinks3 = document.getElementsByClassName("tablinks3");
+            for (i = 0; i < tablinks3.length; i++) {
+                tablinks3[i].className = tablinks3[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+
+
+
+
+        var x, i, j, l, ll, selElmnt, a, b, c;
+        /*look for any elements with the class "custom-select":*/
+        x = document.getElementsByClassName("custom-select");
+        l = x.length;
+        for (i = 0; i < l; i++) {
+            selElmnt = x[i].getElementsByTagName("select")[0];
+            ll = selElmnt.length;
+            /*for each element, create a new DIV that will act as the selected item:*/
+            a = document.createElement("DIV");
+            a.setAttribute("class", "select-selected");
+            a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+            x[i].appendChild(a);
+            /*for each element, create a new DIV that will contain the option list:*/
+            b = document.createElement("DIV");
+            b.setAttribute("class", "select-items select-hide");
+            for (j = 1; j < ll; j++) {
+                /*for each option in the original select element,
+                create a new DIV that will act as an option item:*/
+                c = document.createElement("DIV");
+                c.innerHTML = selElmnt.options[j].innerHTML;
+                c.addEventListener("click", function (e) {
+                    /*when an item is clicked, update the original select box,
+                    and the selected item:*/
+                    var y, i, k, s, h, sl, yl;
+                    s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                    sl = s.length;
+                    h = this.parentNode.previousSibling;
+                    for (i = 0; i < sl; i++) {
+                        if (s.options[i].innerHTML == this.innerHTML) {
+                            s.selectedIndex = i;
+                            h.innerHTML = this.innerHTML;
+                            y = this.parentNode.getElementsByClassName("same-as-selected");
+                            yl = y.length;
+                            for (k = 0; k < yl; k++) {
+                                y[k].removeAttribute("class");
+                            }
+                            this.setAttribute("class", "same-as-selected");
+                            break;
+                        }
+                    }
+                    h.click();
+                });
+                b.appendChild(c);
+            }
+            x[i].appendChild(b);
+            a.addEventListener("click", function (e) {
+                /*when the select box is clicked, close any other select boxes,
+                and open/close the current select box:*/
+                e.stopPropagation();
+                closeAllSelect(this);
+                this.nextSibling.classList.toggle("select-hide");
+                this.classList.toggle("select-arrow-active");
+            });
+        }
+        function closeAllSelect(elmnt) {
+            /*a function that will close all select boxes in the document,
+            except the current select box:*/
+            var x, y, i, xl, yl, arrNo = [];
+            x = document.getElementsByClassName("select-items");
+            y = document.getElementsByClassName("select-selected");
+            xl = x.length;
+            yl = y.length;
+            for (i = 0; i < yl; i++) {
+                if (elmnt == y[i]) {
+                    arrNo.push(i)
+                } else {
+                    y[i].classList.remove("select-arrow-active");
+                }
+            }
+            for (i = 0; i < xl; i++) {
+                if (arrNo.indexOf(i)) {
+                    x[i].classList.add("select-hide");
+                }
+            }
+        }
+        /*if the user clicks anywhere outside the select box,
+        then close all select boxes:*/
+        document.addEventListener("click", closeAllSelect);
+
+    </script>
+
+
+    <script src="radial-progress-bar.js"></script>
+    <script src="examples.js"></script>
+</body>
+</html>
